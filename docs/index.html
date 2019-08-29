@@ -1,135 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<style>
-		body{
-			background:#bbb;
-			font:1em tahoma;
-			line-height:1.2;
-		}
-		a{
-			text-decoration:none;
-		}
-		a:link{
-			color:blue;
-		}
-		a:visited{
-			color:black;
-		}
-		a:hover{
-			color:white;
-		}
-		a:active{
-			color:blue;
-		}
-		ul#navbar{
-    			display: flex;
-		}
-		ul#navbar>li{
-    			margin: 25px;
-		}
-		.list_wrapper>ul{
-    			padding: 3px 0px;
-		}
-		#navbar>li>a>span{
-    			font-size: 110%;
-		}
-	</style>
-  <title>WGT Nav Menu</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="WGTMenu.css">
+	<title>Document</title>
 </head>
+
 <body>
-<ul id="navbar" role="menubar" class="en">
-	<li class="navCredits" id="get_credits">
-		<a target="_blank" href="http://www.wgt.com/user/buycredits.aspx" aria-haspopup="true"><span>Get Credits</span></a>
-		<div class="list_wrapper" id="credits_list_wrapper">
-			<ul id="get_credits_subnav_list" class="subnav_list" aria-hidden="true">
-				<li id="buy_credits_subnav_item"><a target="_blank" href="http://www.wgt.com/user/buycredits.aspx"><span>Buy WGT Credits</span></a></li>
-				<li id="buy_coins_subnav_item" style="display:none"><a target="_blank" href="http://www.wgt.com/user/buycoins.aspx"><span>Buy WGT Coins</span></a></li>
-				<li id="complete_offers_subnav_item"><a target="_blank" href="http://www.wgt.com/user/offers.aspx"><span>Earn Free Credits</span></a></li>
-			</ul>
+	<div class="navbar">
+		<div class="dropdown">
+			<button class="dropbtn">Get Credits</button>
+			<div class="dropdown-content">
+				<a target="_blank" href="http://www.wgt.com/user/buycredits.aspx">Buy WGT Credits</a>
+				<a target="_blank" href="http://www.wgt.com/user/buycoins.aspx" style="display:none;">Buy WGT Coins</a>
+				<a target="_blank" href="http://www.wgt.com/user/offers.aspx">Earn Free Credits</a>
+			</div>
 		</div>
-	</li>
 
-	<li class="navProShop" id="proshop">
-		<a target="_blank" href="http://www.wgt.com/proshop/" aria-haspopup="true"><span>Pro Shop</span></a>
-		<div class="list_wrapper" id="proshop_list_wrapper">
-			<ul class="subnav_list" aria-hidden="true">
-				<li><a target="_blank" href="http://www.wgt.com/proshop/" title="New and recommended gear"><span>Featured</span></a></li>
-				<li><a target="_blank" href="http://www.wgt.com/proshop/golf-brands/" title="Shop by brand name"><span>Brands</span></a></li>
-				<li><a target="_blank" href="http://www.wgt.com/proshop/golf-clubs/" title="Drivers, woods, hybrids, irons, wedges, putters"><span>Clubs</span></a></li>
-				<li><a target="_blank" href="http://www.wgt.com/proshop/golf-balls/" title="Improve spin, distance, and durability"><span>Balls</span></a></li>
-				<li><a target="_blank" href="http://www.wgt.com/proshop/golf-accessories/" title="Play and level up faster"><span>Accessories</span></a></li>
-				<li id="avatars_subnav_item"><a target="_blank" href="http://www.wgt.com/proshop/golf-avatars/" title="Customize your look"><span>Avatars</span></a></li>
-				<li><a target="_blank" href="http://www.wgt.com/proshop/elite/" title="Special items"><span>Elite</span></a></li>
-				<li><a target="_blank" href="http://www.wgt.com/proshop/country-club-rewards/" title="Country Club Rewards"><span>CC Rewards</span></a></li>
-			</ul>
-		</div>
-	</li>
-	<li class="navProfile" id="profile">
-		<a target="_blank" href="http://www.wgt.com/myprofile.aspx" aria-haspopup="true"><span>My Profile</span></a>
-		<div class="list_wrapper" id="profile_list_wrapper">
-			<ul id="profile_subnav_list" class="subnav_list" aria-hidden="true">
-				<li id="myprofile_subnav_item"><a target="_blank" href="http://www.wgt.com/myprofile.aspx"><span>My Profile</span></a></li>
-				<li id="myclub_subnav_item"><a target="_blank" href="http://www.wgt.com/clubs/myclub.aspx"><span>My Country Club</span></a></li>
-			</ul>
-		</div>
-	</li>
-	<li class="navCommunity" id="wgt_community">
-		<a target="_blank" href="http://www.wgt.com/players.aspx" aria-haspopup="true"><span>WGT Community</span></a>
-		<div class="list_wrapper" id="community_list_wrapper">
-			<ul id="wgt_community_subnav_list" class="subnav_list" aria-hidden="true">
-				<li id="wgt_players_subnav_item"><a title="Golf players" target="_blank" href="http://www.wgt.com/players.aspx"><span>WGT Players</span></a></li>
-				<li id="country_clubs_subnav_item"><a title="Virtual country clubs" target="_blank" href="http://www.wgt.com/clubs/"><span>Country Clubs</span></a></li>
-				<li id="courses_subnav_item"><a title="Play virtual golf courses" target="_blank" href="http://www.wgt.com/courses/"><span>Golf Courses</span></a></li>
-				<li id="replays_subnav_item"><a title="Golf shot replays" target="_blank" href="http://www.wgt.com/replays/"><span>Replay Highlights</span></a></li>
-				<li id="hio_subnav_item"><a title="Hole-in-one challenge winners" target="_blank" href="http://www.wgt.com/hio_challenge_winners.aspx"><span>Hole-In-Ones</span></a></li>
-				<li id="stream_subnav_item"><a title="Broadcast on twitch" target="_blank" href="http://www.wgt.com/stream/"><span>Streaming on WGT</span></a></li>
-			</ul>
-		</div>
-	</li>
-	<li class="navTourneys" id="tournaments">
-		<a target="_blank" href="http://www.wgt.com/golf-tournaments/" aria-haspopup="true"><span>Tournaments</span></a>
-		<div class="list_wrapper">
-			<ul class="subnav_list" aria-hidden="true">
-				<li><a title="Virtual golf tournaments" target="_blank" href="http://www.wgt.com/golf-tournaments/"><span>Tournaments</span></a></li>
 
-				<li><a title="Year-round tournament series" target="_blank" href="http://www.wgt.com/golf-tournaments/virtual-tour/"><span>Virtual Tour</span></a></li>
 
-				<li><a title="16-player Bracket tournaments" target="_blank" href="http://www.wgt.com/golf-tournaments/brackets/"><span>Brackets</span></a></li>
-				<li><a title="Fast 50-player tournaments" target="_blank" href="http://www.wgt.com/golf-tournaments/ready-go/"><span>Ready-Go</span></a></li>
-				<li><a title="Full tournament list" target="_blank" href="http://www.wgt.com/golf-tournaments/tournament-calendar/"><span>Calendar</span></a></li>
-				<li><a title="Scores from recent tournaments" target="_blank" href="http://www.wgt.com/golf-tournaments/tournament-results/"><span>Results</span></a></li>
+		<div class="dropdown">
+			<button class="dropbtn">Pro Shop</button>
+			<div class="dropdown-content">
+				<a target="_blank" href="http://www.wgt.com/proshop/" title="New and recommended gear">Featured</a>
+				<a target="_blank" href="http://www.wgt.com/proshop/golf-brands/" title="Shop by brand name">Brands</a>
+				<a target="_blank" href="http://www.wgt.com/proshop/golf-clubs/"
+					title="Drivers, woods, hybrids, irons, wedges, putters">Clubs</a>
+				<a target="_blank" href="http://www.wgt.com/proshop/golf-balls/"
+					title="Improve spin, distance, and durability">Balls</a>
+				<a target="_blank" href="http://www.wgt.com/proshop/golf-accessories/"
+					title="Play and level up faster">Accessories</a>
+				<a target="_blank" href="http://www.wgt.com/proshop/golf-avatars/" title="Customize your look">Avatars</a>
+				<a target="_blank" href="http://www.wgt.com/proshop/elite/" title="Special items">Elite</a>
+				<a target="_blank" href="http://www.wgt.com/proshop/country-club-rewards/" title="Country Club Rewards">CC
+					Rewards</a>
+			</div>
+		</div>
 
-				<li><a target="_blank" href="http://www.wgt.com/golf-tournaments/us-amateur/"><span>Virtual U.S. Amateur</span></a></li>
 
-			</ul>
+		<div class="dropdown">
+			<button class="dropbtn">My Profile</button>
+			<div class="dropdown-content">
+				<a target="_blank" href="http://www.wgt.com/myprofile.aspx">My Profile</a>
+				<a target="_blank" href="http://www.wgt.com/clubs/myclub.aspx">My Country Club</a>
+			</div>
 		</div>
-	</li>
-	<li class="navForums selected" id="forums">
-		<a target="_blank" href="http://www.wgt.com/forums/" aria-haspopup="true"><span>Forums</span></a>
-		<div class="list_wrapper" id="forums_list_wrapper">
-			<ul id="wgt_forums_subnav_list" class="subnav_list" aria-hidden="true">
-				<li><a target="_blank" href="http://www.wgt.com/forums/" title="Discussion forums"><span>WGT Forums</span></a></li>
-				<li><a target="_blank" href="http://www.wgt.com/golfnews/" title="World golf news"><span>WGT News</span></a></li>
-			</ul>
+
+
+		<div class="dropdown">
+			<button class="dropbtn">WGT Community</button>
+			<div class="dropdown-content">
+				<a title="Golf players" target="_blank" href="http://www.wgt.com/players.aspx">WGT Players</a>
+				<a title="Virtual country clubs" target="_blank" href="http://www.wgt.com/clubs/">Country Clubs</a>
+				<a title="Play virtual golf courses" target="_blank" href="http://www.wgt.com/courses/">Golf Courses</a>
+				<a title="Golf shot replays" target="_blank" href="http://www.wgt.com/replays/">Replay Highlights</a>
+				<a title="Hole-in-one challenge winners" target="_blank"
+					href="http://www.wgt.com/hio_challenge_winners.aspx">Hole-In-Ones</a>
+				<a title="Broadcast on twitch" target="_blank" href="http://www.wgt.com/stream/">Streaming on WGT</a>
+			</div>
 		</div>
-	</li>
-	<li class="navTeeTimes" id="teetimes">
-		<a target="_blank" href="http://www.wgt.com/teetimes/" aria-haspopup="false"><span>Tee Times</span></a>
-	</li>
-	<li class="navAccount" id="my_account" style="display:none">
-		<a target="_blank" href="http://www.wgt.com/user/myaccount.aspx" aria-haspopup="true"><span>My Account</span></a>
-		<div class="list_wrapper" id="account_list_wrapper">
-			<ul id="wgt_account_subnav_list" class="subnav_list" aria-hidden="true">
-				<li><a target="_blank" href="http://www.wgt.com/user/myaccount.aspx"><span>Summary</span></a></li>
-				<li class="messages"><a target="_blank" href="http://www.wgt.com/user/conversations/default.aspx"><span><i></i> Messages</span></a></li>
-				<li><a target="_blank" href="http://www.wgt.com/logout.aspx" title="Sign out of the website (not the desktop app)"><span>Log Out</span></a></li>
-			</ul>
+
+
+		<div class="dropdown">
+			<button class="dropbtn">Tournaments</button>
+			<div class="dropdown-content">
+				<a title="Virtual golf tournaments" target="_blank" href="http://www.wgt.com/golf-tournaments/">Tournaments</a>
+				<a title="Year-round tournament series" target="_blank"
+					href="http://www.wgt.com/golf-tournaments/virtual-tour/">Virtual Tour</a>
+				<a title="16-player Bracket tournaments" target="_blank"
+					href="http://www.wgt.com/golf-tournaments/brackets/">Brackets</a>
+				<a title="Fast 50-player tournaments" target="_blank"
+					href="http://www.wgt.com/golf-tournaments/ready-go/">Ready-Go</a>
+				<a title="Full tournament list" target="_blank"
+					href="http://www.wgt.com/golf-tournaments/tournament-calendar/">Calendar</a>
+				<a title="Scores from recent tournaments" target="_blank"
+					href="http://www.wgt.com/golf-tournaments/tournament-results/">Results</a>
+				<a target="_blank" href="http://www.wgt.com/golf-tournaments/us-amateur/">Virtual U.S. Amateur</a>
+			</div>
 		</div>
-	</li>
-</ul>
+
+
+		<div class="dropdown">
+			<button class="dropbtn">Forums</button>
+			<div class="dropdown-content">
+				<a target="_blank" href="http://www.wgt.com/forums/" title="Discussion forums">WGT Forums</a>
+				<a target="_blank" href="http://www.wgt.com/golfnews/" title="World golf news">WGT News</a>
+			</div>
+		</div>
+
+		<div class="dropdown">
+			<button class="dropbtn">Tee Times</button>
+			<div class="dropdown-content">
+				<a target="_blank" href="http://www.wgt.com/teetimes/">Tee Times</a>
+			</div>
+		</div>
+
+
+		<div class="dropdown">
+			<button class="dropbtn" style="display:none">My Account</button>
+			<div class="dropdown-content">
+				<a target="_blank" href="http://www.wgt.com/user/myaccount.aspx">Summary</a>
+				<a target="_blank" href="http://www.wgt.com/user/conversations/default.aspx"><i></i> Messages</a>
+				<a target="_blank" href="http://www.wgt.com/logout.aspx"
+					title="Sign out of the website (not the desktop app)">Log Out</a>
+			</div>
+		</div>
+
+	</div>
+
 </body>
+
 </html>
