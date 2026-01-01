@@ -3,6 +3,13 @@ body {
   background:#bbb;
 }
 
+#messageButton {
+  display: flex;
+  justify-content: center;
+  font-size: 2em;
+  margin: 1em;
+}
+
 .navbar {
   overflow: hidden;
   background-color: #333;
