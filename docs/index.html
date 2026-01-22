@@ -20,7 +20,7 @@
 	</div>
 	<p class="spacer"></p>
 	<div class="riv">
-	<p class="link"><a href="javascript:(function(){if (location.host==='www.wgt.com'){let links=document.querySelectorAll('a').forEach(function(a){a.href.match(/youtu.?be|watch/gi)?embedVideo(a):undefined;});}function embedVideo(a){a.parentElement.innerHTML=`<iframe width='475' height='267' src='https://youtube.com/embed/${a.href.match(/(?<=v=).{11}|(?<=be\/).{11}/gi)}'frameborder='0' allowfullscreen></iframe>`; }})()">Restore Inline Videos</a></p>
+	<p class="link"><a href="javascript:(function(){let links,w,h;if(location.host==='www.wgt.com'){links=document.querySelectorAll('a').forEach(function(a){a.href.match(/youtu.?be/gi)||a.href.match(/watch|embed/gi)?embedVideo(a):undefined;});}function embedVideo(a){location.href.includes('scotthope')?(w=300,h=170):(w=475,h=267);a.innerHTML=`<iframe width=${w} height=${h} src='https://youtube.com/embed/${a.href.match(/(?<=v=).{11}|(?<=be\/).{11}/gi)}' frameborder='0' allowfullscreen></iframe>`;}})()">Restore Inline Videos</a></p>
 	<p>Drag the 'Restore Inline Videos' link above into your browser's bookmark bar or bookmarks folder, then you can close this tab|window</p>
 	<p>If you visit any WGT.com page that has a YouTube video link but no playable inline video, clicking your newly created bookmarklet may reinstate the inline video. The video may appear larger than it was when originally posted.</p>
 	<p>This is not a permanent fix. If you refresh the page the videos will disappear.</p>
