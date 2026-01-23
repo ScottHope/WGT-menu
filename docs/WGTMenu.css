@@ -18,6 +18,7 @@ body {
 }
 
 .spacer {
+  display:none;
   background: none;
   padding: 1em
 }
@@ -40,6 +41,7 @@ div.smb p {
 }
 
 div.riv p {
+  display:none;
   background: #d9f0d9
 }
 /*
